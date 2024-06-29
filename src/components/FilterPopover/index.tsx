@@ -4,7 +4,6 @@ import { StyledComponent } from '@emotion/styled';
 import { FormGroup, Box, Checkbox, Button } from '@mui/material';
 import { Tags } from '../../models/tags';
 import { Settings } from '../../models/settings';
-import { THEMES } from '../../consts';
 import { memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -35,7 +34,6 @@ const FilterPopover = ({title, ButtonComponent, tags, onSettingChange}: Props) =
   }, [anchorEl])
 
   const onCheckBoxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(tagFilter)
     if (tagFilter.some(tag => String(tag.id) === e.target.value)){
 
       setTagFilter(prevTags => 

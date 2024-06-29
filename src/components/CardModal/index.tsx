@@ -1,7 +1,7 @@
 import React, { memo, useState } from 'react'
 import { CardProps } from '../../models'
-import { Modal, Box, Typography, Button, TextField, Grid, Checkbox, FormControlLabel, FormGroup, colors } from '@mui/material'
-import dayjs, { Dayjs } from 'dayjs';
+import { Modal, Box, Button, TextField, Grid, Checkbox, FormGroup } from '@mui/material'
+import dayjs from 'dayjs';
 import { Tags } from '../../models/tags';
 import { Settings } from '../../models/settings';
 import { useTranslation } from 'react-i18next';

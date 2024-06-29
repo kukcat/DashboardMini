@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Box, Button, Grid, TextField } from '@mui/material'
+import { Box, Button, Grid } from '@mui/material'
 import FilterPopover from '../FilterPopover'
 import { Settings } from '../../models/settings'
 import SettingsModal from '../SettingsModal'

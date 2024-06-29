@@ -1,6 +1,6 @@
-import React, { memo, useMemo, useState } from 'react'
+import React, { memo, useState } from 'react'
 import { CardProps } from '../../models'
-import { Box, Grid, Paper, Typography, styled } from '@mui/material'
+import { Box, Paper, Typography, styled } from '@mui/material'
 import CardModal from '../CardModal'
 import { Settings } from '../../models/settings'
 import { useTranslation } from 'react-i18next'

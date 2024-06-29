@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { BoardProps, CardProps } from '../../models';
+import { BoardProps } from '../../models';
 import { setLocalStorage } from '../../localeStorage';
 import { LOCAL_STORAGE_TYPES } from '../../consts';
 import { useTranslation } from 'react-i18next';
@@ -39,6 +39,7 @@ export const useBoard = () => {
           {...board, cards: [...board.cards, { cardId: Date.now(), cardTitle: t("Card.newCard"), description: '',
                                 position: board.cards.length + 1, cardTags: [],  expiredDate: new Date(), }, ], }
           : board));
+          // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onBoardsAdd = useCallback((boardsArr: BoardProps[]): void => {

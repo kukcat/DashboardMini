@@ -7,7 +7,6 @@ import { DragDropContext, Draggable, DropResult, Droppable } from 'react-beautif
 import { Scrollbar } from 'react-scrollbars-custom'
 import styled from '@emotion/styled'
 import { Card } from '../../models/card'
-import { ThemeProvider } from '../../providers'
 import { THEMES } from '../../consts'
 
 const CustomScrollbar = styled(Scrollbar)(({theme})=>({
@@ -71,8 +70,6 @@ const MainBoard = ({
     }
 
     if (result.type === 'CARD') {
-
-      console.log(result)
 
       if (result.destination?.droppableId === result.source.droppableId) {
 

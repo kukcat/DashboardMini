@@ -35,7 +35,7 @@ const ColorPopover = ({Icon, iconColor, value, onColorChange}: Props) => {
     const colorChangeEvent = (color: any) => {
         const selectedColor = color.target.lastElementChild.style.backgroundColor.slice(4, -1) as string
         const selectedColors = selectedColor.split(',')
-        const finalColor = "#" + (1 << 24 | +selectedColors[0] << 16 | +selectedColors[1] << 8 | +selectedColors[2]).toString(16).slice(1)
+        const finalColor = "#" + ((1 << 24) | (+selectedColors[0] << 16) | (+selectedColors[1] << 8) | +selectedColors[2]).toString(16).slice(1)
 
         onColorChange(finalColor)
     }

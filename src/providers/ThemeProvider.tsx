@@ -9,7 +9,6 @@ interface Props {
 }
 
 const ThemeProvider = ({children, theme}: Props) => {
-    console.log(theme)
     let currentTheme
 
     switch (theme) {
@@ -23,9 +22,6 @@ const ThemeProvider = ({children, theme}: Props) => {
             currentTheme = createTheme(light)    
             break;
     }
-
-
-    console.log(currentTheme)
 
     return (
         <Theme theme={currentTheme}>

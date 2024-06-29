@@ -8,14 +8,12 @@ export const useSettings = () => {
     const [settings, setSettings] = useState<Settings>(baseSettings)
 
     useEffect(() => {
-        if (settings != baseSettings) {
-            console.log('save')
+        if (settings !== baseSettings) {
             setLocalStorage(LOCAL_STORAGE_TYPES.SETTINGS, settings);
         }
     }, [settings]);
 
     const onSettingChange = useCallback((settingType: keyof Settings, value: any) => {
-        console.log(settingType, value)
         setSettings(prevSettings => ({...prevSettings, [settingType]:value}) as Settings)
 
     }, [])
@@ -43,8 +41,6 @@ export const useSettings = () => {
     const onLanguageChange = useCallback((language: string)=>{
         setSettings(prevSettings => ({...prevSettings, language}))
     }, [])
-
-    console.log(settings)
  
     return {
         settings,

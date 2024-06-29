@@ -1,10 +1,9 @@
 import styled from '@emotion/styled'
-import { Box, Button, Grid, Icon, IconButton, Paper, Popover, TextField } from '@mui/material'
-import React, { memo, useCallback, useState } from 'react'
+import { Box, Button, Grid, Icon, IconButton, Paper, TextField } from '@mui/material'
+import React, { memo } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { BoardProps, CardProps } from '../../models';
-import { HexColorPicker } from 'react-colorful';
 import Card from '../Card';
 import fontColorContrast from 'font-color-contrast';
 import { Settings } from '../../models/settings';
