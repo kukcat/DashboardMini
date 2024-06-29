@@ -1,0 +1,29 @@
+{
+    "Settings": {
+        "addBoard" : "Додати дошку",
+        "filter": "Фільтер",
+        "settings": "Налаштування",
+        "select": "Обрати",
+        "remove": "Видалити",
+        "change": "Змінити",
+        "addTag": "Додати тег",
+        "selectColorTag": "Оберіть колір нового тега",
+        "createTag": "Створити тег",
+        "changeTag": "Змінити теги",
+        "changeTheme": "Змінити тему",
+        "darkTheme": "Темна",
+        "lightTheme": "Світла",
+        "changeLanguage": "Змінити мову"
+    },
+    "Board" : {
+        "boardName": "Назва дошки",
+        "addCard": "Додати картку"
+    },
+    "Card": {
+        "deadline": "Дедлайн",
+        "cardTitle": "Назва картки",
+        "description": "Опис",
+        "change": "Змінити",
+        "newCard": "Нова картка"
+    }
+}
