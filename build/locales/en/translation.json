@@ -1,0 +1,29 @@
+{
+    "Settings": {
+        "addBoard" : "Add board",
+        "filter": "Filter",
+        "settings": "Settings",
+        "select": "Select",
+        "remove": "Remove",
+        "change": "Change",
+        "addTag": "Add tag",
+        "selectColorTag": "Select new tag",
+        "createTag": "Create tag",
+        "changeTag": "Change tag",
+        "changeTheme": "Change theme",
+        "darkTheme": "Dark",
+        "lightTheme": "Light",
+        "changeLanguage": "Change language"
+    },
+    "Board" : {
+        "boardName": "Board name",
+        "addCard": "Add card"
+    },
+    "Card": {
+        "deadline": "Deadline",
+        "cardTitle": "Card name",
+        "description": "Description",
+        "change": "Change",
+        "newCard": "New card"
+    }
+}
