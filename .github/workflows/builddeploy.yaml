@@ -1,3 +1,10 @@
+name: Deploy React to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # name of the branch you are pushing to
+
 jobs:
   # Build job
   build:
